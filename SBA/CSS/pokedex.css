@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(255, 255, 255, 0.7)), url(../images/library.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+body {
+    /* background: #EFEFBB;
+    background: -webkit-linear-gradient(to right, #D4D3DD, #14f0b9);
+    background: linear-gradient(to right, #ffffff85, #ffff6893); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(54, 54, 54);
+}
+
+/*IMPORTANT TOP-RIGHT TEXT ALIGNMENT*/
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/*MISCEALLANEOUS TOP-RIGHT TEXT ALIGNMENT*/
+nav img {
+    width: 150px;
+}
+/*MISCEALLANEOUS TOP-RIGHT TEXT ALIGNMENT*/
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+/*POSITION TOP-RIGHT TEXT IN SEQUENCE */
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+/*FORMAT TOP-RIGHT TEXT*/
+.nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+/*RED UNDERLINE ANIMATION UNDER TOP RIGHT TEXT*/
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+/*HOVER SPECIFICATION TO DISPLAY ANIMATION*/
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+/*ALL (title, description, button) TEXT FORMATTING*/
+.text-box {
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*BIG TEXT FORMATTING*/
+.text-box h1 {
+    font-size: 62px;
+}
+.text-box label {
+    margin-right: 50px;
+}
+
+/*TEXT FORMATTING BETWEEN BIG TEXT AND SIGN UP BUTTON*/
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #ffffff;
+}
+nav .fa {
+    display: none;
+}
+/*FORMATS WEBSITE FOR SMALL-DISPLAY DEVICES*/
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #31758a;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: .38s;
+        display: block;
+    }
+    nav .fa {
+        display: block;
+        color: #ffffff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+.pokedexText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato";
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.pokedexText p {
+    color: rgb(155, 155, 155);
+}
+
+h1 {
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
+.poke-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.pokemon {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px));
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.pokemon .img-container img {
+    margin-top: 100px;
+    max-width: 90%;
+}
+.pokemon:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 22%;
+    transition: .5s;
+}
+.pokemon .img-container:hover{
+    border-radius: 15%;
+    transition: .5s;
+    transform: scale(1.6);
+}
+.pokemon .info {
+    margin-top: 0px;
+}
+.pokemon .number {
+    background: #ffffff;
+    border-radius: 10px;
+    font-size: 0.8em;
+    padding: 5px 10px;
+}
+.pokemon .name {
+    margin: 15px 0 7px;
+    letter-spacing: 1px;
+}
+
+/*------ footer ------*/
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer {
+    background-color: #FFFFFF;
+}
+
+.footer h4 {
+    margin-bottom: 35px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p {
+    color: #777;
+    font-size: 85%;
+    margin: 10px;
+}
+/*NOT WORKING*/
+.icons .fa {
+    color: #31758a;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}

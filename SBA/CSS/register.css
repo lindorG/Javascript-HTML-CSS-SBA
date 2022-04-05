@@ -1,0 +1,217 @@
+/*ALL*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/*ALL THINGS PERTAINING TO HEADER(background image, text, etc.)*/
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(71, 59, 59, 0.7), rgba(255, 255, 255, 0.7)), url(../images/banner3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: sticky;
+}
+/*IMPORTANT TOP-RIGHT TEXT ALIGNMENT*/
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+/*MISCEALLANEOUS TOP-RIGHT TEXT ALIGNMENT*/
+nav img {
+  width: 150px;
+}
+/*MISCEALLANEOUS TOP-RIGHT TEXT ALIGNMENT*/
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+/*POSITION TOP-RIGHT TEXT IN SEQUENCE */
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+/*FORMAT TOP-RIGHT TEXT*/
+.nav-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+}
+/*RED UNDERLINE ANIMATION UNDER TOP RIGHT TEXT*/
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
+  transition: .5s;
+}
+/*HOVER SPECIFICATION TO DISPLAY ANIMATION*/
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+/*ALL (title, description, button) TEXT FORMATTING*/
+.text-box {
+  color: #ffffff;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*BIG TEXT FORMATTING*/
+.text-box h3 {
+  font-size: 62px;
+  margin-top: 500px;
+}
+
+/*TEXT FORMATTING BETWEEN BIG TEXT AND SIGN UP BUTTON*/
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #ffffff;
+}
+/*SUBMIT BUTTON*/
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: #333333;
+  position: relative;
+  cursor: pointer;
+}
+/*COLOR HOVER EFFECT OVER SUBMIT BUTTON*/
+.hero-btn:hover {
+  border: 1px solid #31758a;
+  background: #31758a;
+  transition: .5s;
+}
+nav .fa {
+  display: none;
+}
+/*FORMATS WEBSITE FOR SMALL-DISPLAY DEVICES*/
+@media(max-width: 700px) {
+  .text-box h1 {
+      font-size: 20px;
+  }
+  .nav-links ul li {
+      display: block;
+  }
+  .nav-links {
+      position: absolute;
+      background: #31758a;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: 0;
+      text-align: left;
+      z-index: 2;
+      transition: .38s;
+      display: block;
+  }
+  nav .fa {
+      display: block;
+      color: #ffffff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .nav-links ul {
+      padding: 30px;
+  }
+}
+
+.input_field {
+  margin-bottom: 10px;
+}
+#displayNameErr {
+  color: red;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  display: none;
+}
+
+#emailErr {
+  color: red;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  display: none;
+}
+#passwordErr {
+  color: red;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  display: none;
+}
+#confirmPasswordErrOne {
+  color: red;
+  font-size: 10px;
+  margin-top: 0px;
+  display: none;
+}
+#confirmPasswordErrTwo {
+  color: red;
+  font-size: 10px;
+  margin-top: 0px;
+  display: none;
+}
+@media(max-width: 10px) {
+  .text-box h3 {
+      font-size: 20px;
+  }
+  .text-box ul li {
+      display: block;
+  }
+  .text-box {
+      position: absolute;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: 0;
+      text-align: left;
+      z-index: 2;
+      transition: .38s;
+      display: block;
+  }
+}
+/*------ footer ------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer {
+  background-color: #FFFFFF;
+  position: sticky;
+}
+
+.footer h4 {
+  margin-bottom: 35px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.footer p {
+  color: #777;
+  font-size: 85%;
+  margin: 10px;
+}
+/*NOT WORKING*/
+.icons .fa {
+  color: #31758a;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}

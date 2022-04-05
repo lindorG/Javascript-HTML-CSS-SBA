@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" type="image/png" href="/images/logo 1.ico">
+    <link rel="stylesheet" href="../CSS/pokedex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/images/logo 1.ico">
+</head>
+<body>
+    <section class="header">
+        <nav>
+          <a href="index.html"><img src="../images/logo-animated2.gif" alt=""></a>
+          <div class = "nav-links" id="navLinks">
+            <!-- Bootstrap button icon -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="../HTML/index.html">HOME</a></li>
+              <li><a href="../HTML/about.html">ABOUT</a></li>
+              <li><a href="../HTML/news.html">NEWS</a></li>
+              <li><a href="../HTML/pokedex.html">Pokédex</a></li>
+              <li><a href="../HTML/teambuilder.html">TEAMBUILDER</a></li>
+              <li><a href="../HTML/forum.html">FORUM</a></li>
+            </ul>
+          </div>
+          <!-- Bootstrap button icon -->
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 style="color: white">Pokédex</h1>
+          <p>We hope you find what you're looking for</p>
+        </div>
+</section>
+
+<section class="pokedex">
+    <div class="pokedexText">
+            <h1>Library</h1>
+          <p>Navigate through our catalog and explore the immense options</p>
+        </div>
+    <div id="poke_container" class="poke-container"></div>
+</section>
+
+    <script src="../JavaScript/pokedex.js"></script>
+    <!------ Footer ----->
+  
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Visit any of our social media pages and to learn more<br>
+    </p>
+    <div class="icons">
+      <a href="https://twitter.com/" style="color: #31758a"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://instagram.com/" style="color: #31758a"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://tiktok.com/" style="color: #31758a"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://github.io/" style="color: #31758a"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/" style="color: #31758a"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2022 PokéTheory All Rights Reserved</p>
+  </section>
+
+  <!------ JavaScript for Togle Menu ------>
+<script src="../JavaScript/index.js"></script>
+</body>
+</html>
