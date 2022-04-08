@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/png" href="/images/logo 1.ico">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/images/logo 1.ico">
+    </head>
+    <body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="../images/logo-animated2.gif" alt=""></a>
+      <div class = "nav-links" id="navLinks">
+        <!-- Bootstrap button icon -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="../HTML/index.html">HOME</a></li>
+          <li><a href="../HTML/about.html">ABOUT</a></li>
+          <li><a href="../HTML/news.html">NEWS</a></li>
+          <li><a href="../HTML/pokedex.html">Pokédex</a></li>
+          <li><a href="../HTML/teambuilder.html">TEAMBUILDER</a></li>
+          <li><a href="../HTML/forum.html">FORUM</a></li>
+        </ul>
+      </div>
+      <!-- Bootstrap button icon -->
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+    <div class="form_wrapper">
+      <div class="form_container">
+        <div class="title_container">
+          <h3>Register</h3>
+        </div>
+            <br>
+              <div class="row clearfix">
+                <div class="col_half">
+                  <form id="register-form">
+                  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                    <input type="text" id="displayName" placeholder="Display Name"/>
+                    <p id="displayNameErr">Please enter a valid Display Name</p>
+                  </div>
+                </div>
+              </div>
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                <input type="email" id="email" placeholder="Email"/>
+              <p id="emailErr">Please enter a valid Email Address</p>
+              </div>
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                <input type="password" id="password" placeholder="Password"/>
+                <p id="passwordErr">Please enter a valid Password</p>
+              </div>
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password"/>
+                <p id="confirmPasswordErrOne">Input field cannot be blank</p>
+                <p id="confirmPasswordErrTwo">Password does not match</p>
+              </div>
+                  <div class="input_field radio_option">
+                  <input type="radio" name="radiogroup1" id="rd1">
+                  <label for="rd1">Male</label>
+                  <input type="radio" name="radiogroup2" id="rd2">
+                  <label for="rd2">Female</label>
+                  <input type="radio" name="radiogroup3" id="rd3">
+                  <label for="rd2">Other</label>
+                  </div>
+                  <div class="input_field select_option">
+                    <select>
+                      <option>Select Region</option>
+                      <option>Kanto</option>
+                      <option>Johto</option>
+                      <option>Hoenn</option>
+                      <option>Sinnoh</option>
+                      <option>Unova</option>
+                      <option>Kalos</option>
+                      <option>Alola</option>
+                      <option>Galar</option>
+                    </select required>
+                    <div class="select_arrow"></div>
+                  </div>
+                  <br><br>
+                <div class="input_field checkbox_option" required>
+                  <input type="checkbox" id="cb1">
+              <label for="cb1">I agree with terms and conditions</label>
+              <br>
+              <input class="hero-btn" type="submit" value="Submit" id="btnsubmit" onsubmit="submissionRedirect()"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+  </section>
+  <script src="../JavaScript/register.js"></script>
+  <!------ Footer ----->
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Visit any of our social media pages and to learn more<br>
+  </p>
+  <div class="icons">
+    <a href="https://twitter.com/" style="color: #31758a"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://instagram.com/" style="color: #31758a"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://tiktok.com/" style="color: #31758a"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://github.io/" style="color: #31758a"><i class="fa-brands fa-github"></i></a>
+    <a href="https://linkedin.com/" style="color: #31758a"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+  <p>&copy; 2022 PokéTheory All Rights Reserved</p>
+</section>
+
+</html>
